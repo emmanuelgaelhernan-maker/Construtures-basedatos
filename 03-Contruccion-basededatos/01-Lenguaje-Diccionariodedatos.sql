@@ -28,15 +28,16 @@ VALUES (1, "kevin","cabeza", "de borrego","1968-06-9", "correo@correo.com");
 
 
  --restriciones
-
-
-/s
+/*
    las mas utilizadas son;
      
    - primary key
-    - foreing KEY ;
-    - 
-    
+    - FOREIGN KEY
+    - NOT NULL
+    - UNIQUE
+    - CHECK
+    - DEFAULT
+*/
     
     DROP TABLE alumno;
     
@@ -60,7 +61,7 @@ VALUES (1, "kevin","cabeza", "de borrego","1968-06-9", "correo@correo.com");
      nombre varchar(30),
      correo varchar (30),
      CONSTRAINT pk_alumno
-     PRIMARY KEY,(alumno_id)
+     PRIMARY KEY (alumno_id)
      );
     
     INSERT INTO alumno
@@ -75,11 +76,11 @@ DROP TABLE alumno;
 -- PRMRY KEY CON IDENTITY
 
   CREATE TABLE alumno (
-     alumno_id int IDENTITY (1,1) PRIMARY KEY,,
+     alumno_id int IDENTITY (1,1) PRIMARY KEY,
      nombre varchar(30),
      correo varchar (30),
      CONSTRAINT pk_alumno
-     PRIMARY KEY,(alumno_id)
+     PRIMARY KEY (alumno_id)
      );   
    INSERT INTO alumno
 VALUES (1, "arkadia","vaca", "del corral","1978-06-10", "correo@correo.com");
@@ -88,6 +89,7 @@ VALUES (1, "arkadia","vaca", "del corral","1978-06-10", "correo@correo.com");
 INSERT INTO alumno
 VALUES (1, "kevin","cabeza", "de borrego","1968-06-9", "correo@correo.com");
    
+    DROP TABLE alumno;
 
 SELECT * from
   CREATE TABLE alumno (
@@ -112,10 +114,12 @@ PRIMARY KEY (profesor_id )
 INSERT INTO profesor
 VALUES ("1423638dygdty","2027-07-9")
 
+    DROP TABLE alumno;
+
 select *
 from profesor;
 
 insert into profesor (numero_nomina, nombre, apellido_materno)
 values ("sddsds", "ricada","castro");
-go
+
 
