@@ -117,5 +117,5 @@ from profesor;
 
 insert into profesor (numero_nomina, nombre, apellido_materno)
 values ("sddsds", "ricada","castro");
-
+go
 
